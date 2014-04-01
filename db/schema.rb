@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140401013843) do
+ActiveRecord::Schema.define(version: 20140401024052) do
+
+  create_table "about_us", force: true do |t|
+    t.text     "content"
+    t.string   "header"
+    t.string   "contact"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"

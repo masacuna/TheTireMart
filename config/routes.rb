@@ -1,4 +1,6 @@
 TheTireMart::Application.routes.draw do
+  resources :about_us
+
   # get "home/index"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
