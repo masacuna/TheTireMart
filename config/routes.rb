@@ -1,6 +1,9 @@
 TheTireMart::Application.routes.draw do
-  # root 'home#index'
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  #root 'home#index'
   match ':controller(/:action(/:id))', :via => [:get, :post]
+  # resources :admin
 
   # resources :line_items
 
