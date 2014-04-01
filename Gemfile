@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+gem 'haml'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
