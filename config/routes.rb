@@ -1,4 +1,6 @@
 TheTireMart::Application.routes.draw do
+  resources :categories
+
   resources :products
 
   resources :orders
