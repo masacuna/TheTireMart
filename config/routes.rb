@@ -1,15 +1,18 @@
 TheTireMart::Application.routes.draw do
-  resources :line_items
+  # root 'home#index'
+  match ':controller(/:action(/:id))', :via => [:get, :post]
 
-  resources :categories
+  # resources :line_items
 
-  resources :products
+  # resources :categories
 
-  resources :orders
+  # resources :products
 
-  resources :customers
+  # resources :orders
 
-  resources :provinces
+  # resources :customers
+
+  # resources :provinces
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
