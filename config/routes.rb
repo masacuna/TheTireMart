@@ -1,4 +1,6 @@
 TheTireMart::Application.routes.draw do
+  resources :orders
+
   resources :customers
 
   resources :provinces
